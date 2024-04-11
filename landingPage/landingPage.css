@@ -1,0 +1,44 @@
+body{
+  background-image: url(sawahTani.jpg);
+  background-size: cover;
+  background-repeat: none;
+  min-height: 100vh;
+  height: auto;
+  width:100%;
+  background-position: center;
+  flex-wrap: wrap;
+}
+
+/* navbar */
+.navbar1{
+  backdrop-filter: blur(100px);
+  font-weight: bold;
+}
+
+.dropdown-menu{
+  background-color: rgba(39, 46, 37, 0.8);
+}
+
+.dropdown-item{
+  font-weight: bold;
+  color: white;
+}
+
+/* text */
+p{
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(39, 45, 39);
+}
+.container-text{
+  margin-top: 20%;
+}
+
+h1{
+  text-shadow: 10px 10px 10px rgb(39, 45, 39);
+}
+/* kata */
+@media screen and (max-width: 476px) {
+  .container-text {
+    margin-top: 30%;
+  }
+}
