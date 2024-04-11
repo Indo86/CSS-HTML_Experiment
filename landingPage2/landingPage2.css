@@ -1,0 +1,77 @@
+body{
+  background-image: url(code.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  height: auto;
+  background-position: center;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.navbar1{
+  backdrop-filter: blur(90px);
+}
+ .logo-txt{
+  font-weight: bold;
+}
+
+ul li{
+  font-weight: bold;
+  color: rgba(33, 48, 30, 0.8);
+}
+
+li:hover{
+  font-weight: bold;
+  color: white;
+  background-color:  rgba(116, 119, 115, 0.08); 
+}
+.salam{
+  text-align: center;
+  margin-top: 20%;
+  color: white;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(28, 38, 28) ;
+}
+
+/* Definisikan animasi fadeIn */
+@keyframes fadeIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Gunakan animasi fadeIn pada elemen dengan kelas .animasi-text */
+.animasi-text{
+  text-transform: uppercase;
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+  transition-timing-function:cubic-bezier(0.785, 0.132, 0.15, 10.86) ;
+
+}
+
+@media screen and (max-width: 340px){
+ .salam{
+  text-align: center;
+  margin-top: 30%;
+  color: white;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px rgb(28, 38, 28) ;
+ }
+}
+
+@media screen and (min-width: 480px){
+  .salam{
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px rgb(28, 38, 28) ;
+   }
+  
+}
