@@ -34,7 +34,6 @@ li:hover{
   text-shadow: 10px 10px 10px rgb(28, 38, 28) ;
 }
 
-/* Definisikan animasi fadeIn */
 @keyframes fadeIn {
   from {
     transform: translateY(100%);
@@ -46,7 +45,6 @@ li:hover{
   }
 }
 
-/* Gunakan animasi fadeIn pada elemen dengan kelas .animasi-text */
 .animasi-text{
   text-transform: uppercase;
   animation: fadeIn 2s forwards;
