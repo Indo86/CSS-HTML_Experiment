@@ -1,0 +1,51 @@
+body{
+  background-image: url(dataCenter.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-position: center;
+  overflow: hidden;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+.navbar1{
+  background-color: rgba(23, 19, 19, 0.8);
+}
+
+/* Definisikan animasi fadeIn */
+@keyframes fadeIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Gunakan animasi fadeIn pada elemen dengan kelas .animasi-text */
+.animasi-text{
+  text-transform: uppercase;
+  animation: fadeIn 2s forwards;
+  opacity: 0;
+  transition-timing-function:cubic-bezier(0.785, 0.132, 0.15, 10.86) ;
+
+}
+
+
+
+
+@media(max-width:991px){
+
+  .sidebar{
+    backdrop-filter: blur(100px);
+    background-color: rgba(255, 255, 255, 0.008);
+  }
+
+}
