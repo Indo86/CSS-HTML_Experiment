@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+    }
+  body{
+    margin: 0;
+    height: 100%;
+  }
+  .header{
+    background-color:darkgray;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .navbar{
+    background-color: black;
+    color: white;
+  }
+
+  ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+   position: static;
+    width: 100%;
+  }
+
+  ul li{
+    float: left;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 14px 16px;
+  }
+
+  ul li:hover{
+    background-color: red;
+  }
+
+  /* content */
+  .coloumn{
+    width: 33.33%;
+    float: left;
+    padding: 15px;
+  }
+
+  /* clear float after the coloumns */
+  .row::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - makes the three columns
+   stack on top of each other instead 
+   of next to each other  */
+
+   @media  screen and (max-width:600px) {
+
+    .coloumn{
+      width: 100%;
+    }
+    
+   }
+   /* footer */
+   .footer {
+  background-color: darkgray;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 50px;
+}
+</style>
+<body>
+  <!-- header -->
+  <div class="container">
+    <div class="header">
+      <h1>Ini Header</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+  </div>
+  <!-- end of header -->
+  <!-- navbar -->
+  <div class="container">
+    <div class="nav">
+      <ul>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end of navbar -->
+  <!-- layout content -->
+  <div class="row">
+    <div class="coloumn">
+      <h2>Coloumn 1</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum commodi consectetur ullam? Sequi molestias quo corrupti tempore voluptate itaque temporibus. Ab minima numquam doloribus excepturi accusamus explicabo consectetur dolor magni.
+      </p>
+    </div>
+    <div class="coloumn">
+      <h2>Coloumn 2</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum commodi consectetur ullam? Sequi molestias quo corrupti tempore voluptate itaque temporibus. Ab minima numquam doloribus excepturi accusamus explicabo consectetur dolor magni.
+      </p>
+    </div>
+    <div class="coloumn">
+      <h2>Coloumn 3</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum commodi consectetur ullam? Sequi molestias quo corrupti tempore voluptate itaque temporibus. Ab minima numquam doloribus excepturi accusamus explicabo consectetur dolor magni.
+      </p>
+    </div>
+  </div>
+  
+  <!-- end of layout content -->
+  <!-- footer -->
+  <div class="footer">
+    <p>footer</p>
+  </div>
+  <!-- the  -->
+</body>
+</html>
